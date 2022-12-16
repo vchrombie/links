@@ -23,15 +23,15 @@
         const title = data.title;
         if (isUrl(title)) {
           // The title is a URL
-          window.open(title, '_self');
+          window.location.replace(title);
         } else {
           // The title is not a URL
-          window.open('https://vchrombie.github.io/links', '_self');
+          window.location.replace('https://vchrombie.github.io/links');
         }
       })
       .catch(error => {
         // Handle the error by redirecting to the vchrombie.github.io/links page
-        window.location.href = 'https://vchrombie.github.io/links';
+        window.location.replace('https://vchrombie.github.io/links');
       });
   </script>
 </body>
