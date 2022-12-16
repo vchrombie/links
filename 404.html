@@ -7,7 +7,7 @@
   <script>
     const isUrl = str => {
       // This regular expression matches URLs
-      const pattern = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+      const pattern = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*(?:\?([^#]*))?(?:#(.*))?$/;
       return pattern.test(str);
     };
 
